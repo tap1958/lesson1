@@ -435,7 +435,8 @@ a {
 }
 @media screen and (max-width: 600px) {
   .layer {
-    width: 100%;
+    /*width: 100%;*/
+    flex-shrink: 1;
     margin-right: 0;
     margin-bottom: 1em; /*16px*/
   }
@@ -491,7 +492,7 @@ a {
 .user-icon {
   min-width: 12px;
   min-height: 12px;
-  background: url(../images/icons//user-red-icon.png) no-repeat 0 45%;
+  background: url(../images/icons/user-red-icon.png) no-repeat 0 45%;
   padding-left: 1.5em; /*18px*/
   line-height: 2;
 }
