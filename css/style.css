@@ -168,7 +168,7 @@ a {
 /*~~~~~~~~~~~~~~~~~~~nav~~~~~~~~~~~~~~~~~~~~*/
 .nav-wrapper {
   background-color: var(--bgcolor-nav);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .5);
   margin-bottom: .75rem; /*12px*/
   position: sticky;
   top: 0;
@@ -205,7 +205,7 @@ a {
     min-height: 100vh;
     width: 100%;
     box-shadow: none;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     z-index: 100;
   }
   .nav-wrapper.show {
@@ -425,8 +425,9 @@ a {
 }
 
 .layer {
+  flex-shrink: 0;
   margin-right: 1em; /*16px*/ 
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .section-right p{
@@ -575,7 +576,7 @@ a {
   border: 1px solid var(--bdcolor-search);
   border-radius: 4px;
   padding: 8px 0 8px 40px;
-  background-color: transparent;
+  /*background-color: transparent;*/
   background: url(../images/icons/search-icon.png) no-repeat 6% 50%;
 }
 .search:focus,
